@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Features Documentation</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Features Documentation</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#career-assistant" class="nav-link">Career Assistant</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#functional-requirements" class="nav-link">Functional Requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#non-functional-requirements" class="nav-link">Non Functional Requirements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#architecture" class="nav-link">Architecture</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="career-assistant">Career Assistant</h1>
+<p>Career Assistant is a web-based project designed to assist university alumni with their career development needs. The project includes several features such as finding alumni, job posting, checking job eligibility, visiting alumni profiles, seeing CGPA-based summaries in pie charts, updating profiles, and sending feedback to the admin.</p>
+<p>The project is built using HTML, CSS, JavaScript for the frontend, and PHP, MySQL for the backend. It offers a user-friendly interface that allows alumni to easily navigate the website and access the available features.</p>
+<h2 id="functional-requirements">Functional Requirements</h2>
+<ul>
+<li>Find Alumni: Alumni can search for other alumni by university ID.
+<img alt="error" src="img/find_alumni.PNG" /></li>
+<li>Job Posting: Alumni can post job vacancies for their companies or organizations, including job titles, job descriptions, job requirements, and application procedures.
+<img alt="error" src="img/job_post.PNG" />
+<img alt="error" src="img/job.PNG" /></li>
+<li>Visit Alumni Profile: Alumni can visit other alumni's profiles to learn more about their educational background, work experience, and career achievements.
+<img alt="error" src="img/visit_profile.PNG" /></li>
+<li>CGPA-Based Summary in Pie Chart: Alumni can see a summary of their CGPA in a pie chart format that highlights their performance in different areas of their academic career.
+<img alt="error" src="img/summary.PNG" /></li>
+<li>
+<p>Update Profile: Alumni can update their profile information, including personal details, educational qualifications, work experience, and other relevant information.
+<img alt="error" src="img/profile_update.PNG" /></p>
+</li>
+<li>
+<p>Send Feedback to Admin: Alumni can send feedback to the admin regarding the website's functionality, features, and overall user experience.
+<img alt="error" src="img/feedback.PNG" /></p>
+</li>
+</ul>
+<h2 id="non-functional-requirements">Non Functional Requirements</h2>
+<ul>
+<li>
+<p>Security: The website should be secure and protect alumni's personal and confidential information from unauthorized access or data breaches.</p>
+</li>
+<li>
+<p>Performance: The website should perform well and respond quickly to user requests, ensuring a smooth and seamless user experience.</p>
+</li>
+<li>
+<p>Usability: The website should be user-friendly and easy to navigate, with clear and concise instructions and labels.</p>
+</li>
+<li>
+<p>Scalability: The website should be scalable and able to handle increasing traffic and data volume as the user base grows.</p>
+</li>
+<li>
+<p>Compatibility: The website should be compatible with various web browsers and devices, ensuring that users can access it from anywhere, anytime.</p>
+</li>
+<li>
+<p>Maintainability: The website should be easy to maintain, with regular updates and bug fixes to ensure optimal performance.</p>
+</li>
+</ul>
+<h2 id="architecture">Architecture</h2>
+<p>The architecture of the Career Assistant project consists of a client-server model, where the client is the user interface (frontend) and the server is the backend database (MySQL) and the server-side scripting language (PHP). The user interface (UI) is built using HTML, CSS, and JavaScript, which sends requests to the server using AJAX calls. The server-side scripts (PHP) process the requests and retrieve data from the database (MySQL) to send back to the UI for display.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Career Assistant project is a valuable resource for university alumni, providing them with a platform to connect with each other, access job opportunities, and advance their careers. The project's user-friendly interface, comprehensive features, and robust security measures make it a top choice for alumni seeking to enhance their professional development. It is designed to be secure, scalable, maintainable, and user-friendly, ensuring a smooth and seamless user experience.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-04-25 17:26:19.947715+00:00
+-->
